@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
         TailwindCSS Configuration File
 
@@ -35,6 +35,7 @@ export default {
         '45': '45%',
         '800px': '800px',
         '550px': '550px',
+        '600px': '600px',
       },
       height: {
         '1px': '1px',

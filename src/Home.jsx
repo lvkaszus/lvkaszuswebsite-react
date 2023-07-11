@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
                      /
 
@@ -19,9 +19,13 @@ import AnimatedLogo from './components/AnimatedLogo';
 import SmartSocialButtons from './components/SmartSocialButtons';
 import AudioPlayer from './components/AudioPlayer';
 
+import { useTranslation } from 'react-i18next';
+
 import './Core.css';
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className='font-fira font-bold text-center p-4'>
       <Helmet>
@@ -36,7 +40,7 @@ function Home() {
 
       <AnimatedLogo />
 
-      <p className='font-normal text-base my-6'>moje media społecznościowe poniżej:</p>
+      <p className='font-normal text-base my-6'>{t('home-titletext')}</p>
 
       <SmartSocialButtons />
 

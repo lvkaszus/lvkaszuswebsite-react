@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
               Core .jsx Script
 
@@ -11,9 +11,11 @@
              
 */
 
-// import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { I18nextProvider } from 'react-i18next';
 
 import '@fontsource/fira-code/300.css';
 import '@fontsource/fira-code/500.css';
@@ -27,20 +29,22 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 
 import './Core.css';
 
-import Home from './Home.jsx';
-import AboutMe from './AboutMe.jsx';
-import Contact from './Contact.jsx';
-import PGP from './PGPKey.jsx';
-import Info from './Info.jsx';
+import Home from './Home';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
+import PGP from './PGPKey';
+import Info from './Info';
 
-import Footer from './components/Footer.jsx';
+import Footer from './components/Footer';
 
-import NotFound from './components/NotFound.jsx';
+import NotFound from './components/NotFound';
+
+import i18n from './components/i18n';
 
 library.add(fab, fas, far);
 
 ReactDOM.createRoot(document.getElementById('flex-container')).render(
-  // <React.StrictMode>
+  <I18nextProvider i18n={i18n}>
     <Router>
       <Routes>
         <Route exact path="/" element={<>
@@ -64,6 +68,6 @@ ReactDOM.createRoot(document.getElementById('flex-container')).render(
         </>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>,
-  //</React.StrictMode>,
+    </Router>
+  </I18nextProvider>,
 )

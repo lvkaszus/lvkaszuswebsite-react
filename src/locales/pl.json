@@ -1,0 +1,80 @@
+{
+    "navbar-home": "główna",
+    "navbar-about_me": "o mnie",
+    "navbar-contact": "kontakt",
+    "navbar-pgp": "klucz pgp",
+    "navbar-info": "informacje",
+
+
+    "informatyka": "informatyka",
+    "sieci komputerowe": "sieci komputerowe",
+    "technika komputerowa": "technika komputerowa",
+    "linux / *nix": "Linux / *nix",
+    "programowanie": "programowanie",
+    "dj": "dj",
+    "zabawa": "zabawa",
+    "życie": "życie",
+
+
+    "home-titletext": "moje media społecznościowe poniżej:",
+
+    "home-ssb-aq": "Anonimowe pytania",
+
+    "home-ap-cs": "Aktualna piosenka:",
+
+
+    "about_me-titletext": "kim jestem?",
+    
+    "about_me-biogram1": "Nazywam się Łukasz, znany bardziej jako 'lvkaszus'. Interesuję się informatyką każdego rodzaju oraz programowaniem. Lubię odkrywać nowe rzeczy 😃 Uwielbiam się bawić w halach z serwerami i innymi urządzeniami teleinformatycznymi. To, że interesuję się informatyką nie oznacza że nie dotknąłem żadnej dziewczyny jak wiele głupich ludzi myśli. 😉",
+    "about_me-biogram2": "Mój opis który teraz czytasz, jak i ogólnie całą tą stronę napisałem samemu korzystając z czystego pliku .JSX i kilku wtyczek ułatwiających życie, ciekawie prawda? 😄",
+
+    "about_me-tsdw": "Na tej stronie jest moje zdjęcie. Aby je wyświetlić, uruchom tę stronę na szerszym ekranie!",
+
+    "about_me-smb": "Moje media społecznościowe znajdziesz, klikając w ten link",
+
+
+    "contact-titletext": "chcesz się ze mną skontaktować?",
+
+    "contact-text1": "Jeżeli chciałbyś lub chciałabyś się ze mną skontaktować w sposób pisemny lub głosowy, możesz napisać do mnie lub zadzwonić korzystając z moich mediów społecznościowych. Pozatym, zawsze możemy się umówić na spotkanie i pogadać 😁",
+    "contact-text2": "Możesz również napisać do mnie wiadomość e-mail, zarówno w tradycyjnej metodzie jak i szyfrowanej kluczem PGP którego znajdziesz u góry klikając w link pod tytułem 'klucz pgp'",
+    "contact-text3": "Pamiętaj tylko, że nigdy nie podam ci mojego prywatnego numeru telefonu. Mam ku temu swoje powody 😉",
+
+    "contact-msm": "Moje media społecznościowe",
+    "contact-meat": "Mój Adres E-mail (tradycyjny!)",
+    "contact-meap": "Mój Adres E-mail (tylko PGP!)",
+
+
+    "pgp-titletext1": "Mój Klucz PGP",
+    "pgp-titletext2": "tylko dla zaawansowanych",
+
+    "pgp-text1": "Chcesz podpisać, zaszyfrować lub odszyfrować jakąś wiadomość lub plik związany ze mną i mi to wysłać?",
+    "pgp-text2": "Pobierz mój klucz publiczny PGP!",
+    
+    "pgp-textfp": "Fingerprint klucza publicznego:",
+
+    "pgp-dlpgp": "Pobierz klucz PGP",
+    "pgp-bthp": "Powrót do strony głównej",
+
+
+    "info-wsdesc": "Strona internetowa Łukaszka! 😁",
+
+    "info-titletext": "Witaj na oficjalnej i jedynej mojej stronie w internecie!",
+
+    "info-sclink": "Zobacz kod źródłowy tej strony! 😄",
+
+    "info-authors": "Autorzy strony, komponentów, grafiki oraz design:",
+    "info-authorlvkaszus": "(Cała strona od zera aż do końca wraz z oskryptowaniem itp.)",
+    "info-authorbazyli": "(Wsparcie dot. programowania w React)",
+
+    "info-usbe": "Użyte oprogramowanie na serwerze (Back-end):",
+
+    "info-tlscert": "Certyfikat TLS:",
+    "info-server": "Serwer:",
+    "info-wwwserver": "Serwer WWW:",
+
+    "info-usfe": "Użyte oprogramowanie na stronie (Front-end):",
+
+    "info-bbots": "Szkielet strony:",
+    "info-ulibs": "Użyte biblioteki:",
+    "info-fonts": "Czcionki:"
+}

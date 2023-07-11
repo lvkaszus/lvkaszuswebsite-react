@@ -1,0 +1,80 @@
+{
+    "navbar-home": "home",
+    "navbar-about_me": "about me",
+    "navbar-contact": "contact",
+    "navbar-pgp": "pgp key",
+    "navbar-info": "informations",
+
+
+    "informatyka": "computer science",
+    "sieci komputerowe": "computer networking",
+    "technika komputerowa": "computer engineering",
+    "linux / *nix": "linux / *nix",
+    "programowanie": "programming",
+    "dj": "dj",
+    "zabawa": "fun",
+    "życie": "life",
+
+
+    "home-titletext": "my social media below:",
+
+    "home-ssb-aq": "Anonymous questions",
+
+    "home-ap-cs": "Current song:",
+
+
+    "about_me-titletext": "who am i?",
+    
+    "about_me-biogram1": "My name is Lucas, better known as 'lvkaszus'. I am interested in computer science of all kinds and programming. I like to discover new things 😃 I love to play in data centers with servers and other IT equipment. Just because I'm interested in IT this doesn't mean I haven't touched any girls like many stupid people think. 😉",
+    "about_me-biogram2": "My description that you are reading now, as well as this whole site in general, I wrote myself using a clean .JSX file and some plugins to make life easier, interesting right? 😄",
+
+    "about_me-tsdw": "On this page is my photo. To view it, run this page on a wider screen!",
+
+    "about_me-smb": "You can find my social media by clicking on this link",
+
+
+    "contact-titletext": "do you want to contact me?",
+
+    "contact-text1": "If you would like to contact me, you can do this by texting to me or calling using my social media. Other than that, we can always meet and talk 😁",
+    "contact-text2": "You can also email me, both in the traditional method and encrypted with a PGP key which you can find at the top by clicking on the link under the 'pgp key' link",
+    "contact-text3": "Just remember that I will never give you my private phone number because of some privacy reasons 😉",
+
+    "contact-msm": "My social media",
+    "contact-meat": "My email address (traditional!)",
+    "contact-meap": "My email address (only with PGP!)",
+
+
+    "pgp-titletext1": "My PGP Key",
+    "pgp-titletext2": "only for advanced users",
+
+    "pgp-text1": "Would you like to sign, encrypt or decrypt some message or file related to me and send it to me?",
+    "pgp-text2": "Download my PGP Public Key!",
+    
+    "pgp-textfp": "Public Key Fingerprint:",
+
+    "pgp-dlpgp": "Download PGP Key",
+    "pgp-bthp": "Back to homepage",
+
+
+    "info-wsdesc": "@lvkaszus Website! 😁",
+
+    "info-titletext": "Welcome to my official and only website on the internet!",
+
+    "info-sclink": "Check out the source code for this website! 😄",
+
+    "info-authors": "Authors of the site, components, graphics and design:",
+    "info-authorlvkaszus": "(Entire site from scratch all the way to the end including scripting, etc.).",
+    "info-authorbazyli": "(React programming support)",
+
+    "info-usbe": "Software used on the server (Back-end):",
+
+    "info-tlscert": "TLS Certificate:",
+    "info-server": "Server:",
+    "info-wwwserver": "WWW Server:",
+
+    "info-usfe": "Software used on the website (Front-end):",
+
+    "info-bbots": "Barebones of the site:",
+    "info-ulibs": "Used libraries:",
+    "info-fonts": "Fonts:"
+}

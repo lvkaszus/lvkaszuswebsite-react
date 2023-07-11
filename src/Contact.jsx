@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
                  /contact
 
@@ -19,12 +19,16 @@ import AnimatedLogo from './components/AnimatedLogo';
 
 import { NavLink } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareFromSquare, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 
 import './Core.css';
 
 function Contact() {
+    const { t } = useTranslation();
+
     return (
       <div className='font-fira font-bold text-center p-4 w-800px'>
         <Helmet>
@@ -39,30 +43,30 @@ function Contact() {
 
         <AnimatedLogo />
 
-        <p className='font-normal text-sm sm:text-xl my-6'>chcesz się ze mną skontaktować?</p>
+        <p className='font-normal text-sm sm:text-xl my-6'>{t('contact-titletext')}</p>
 
         <p className='font-light text-xs sm:text-base mb-4'>
-            Jeżeli chciałbyś lub chciałabyś się ze mną skontaktować w sposób pisemny lub głosowy, możesz napisać do mnie lub zadzwonić korzystając z moich mediów społecznościowych. Pozatym, zawsze możemy się umówić na spotkanie i pogadać 😁<br/><br/>Możesz również napisać do mnie wiadomość e-mail, zarówno w tradycyjnej metodzie jak i szyfrowanej kluczem PGP którego znajdziesz u góry klikając w link pod tytułem &apos;klucz pgp&apos;<br/><br/><span className='font-normal text-red-500'>Pamiętaj tylko, że nigdy nie podam ci mojego prywatnego numeru telefonu. Mam ku temu swoje powody 😉</span>
+        {t('contact-text1')}<br/><br/>{t('contact-text2')}<br/><br/><span className='font-normal text-red-500'>{t('contact-text3')}</span>
         </p>
 
         <div className="my-3">
             <NavLink exact="true" to="/" className="text-xs sm:text-base text-orange-400">
                 <FontAwesomeIcon icon={faShareFromSquare} className='mr-2' />
-                <span>Moje media społecznościowe</span>
+                <span>{t('contact-msm')}</span>
             </NavLink>
         </div>
 
         <div className="my-3">
             <a className="text-xs sm:text-base text-sky-400" href="mailto:lukasz@lvkasz.us">
                 <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
-                <span>Mój Adres E-mail (tradycyjny!)</span>
+                <span>{t('contact-meat')}</span>
             </a>
         </div>
 
         <div className="mt-6 mb-2">
             <a className="text-xs sm:text-base text-red-500" href="mailto:pgp@lvkasz.us">
                 <FontAwesomeIcon icon={faLock} className='mr-2' />
-                <span>Mój Adres E-mail (tylko PGP!)</span>
+                <span>{t('contact-meap')}</span>
             </a>
         </div>
 

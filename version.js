@@ -2,16 +2,13 @@
 
     lvkaszusWebsite-React --- version: 4.2
     
-          PostCSS Configuration File
+            Set Version Script
 
       Designed and written by: @lvkaszus
              (https://lvkasz.us)
              
 */
 
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+export const getVersion = () => {
+    return import.meta.env.VITE_APP_VERSION || '4.2';
+};

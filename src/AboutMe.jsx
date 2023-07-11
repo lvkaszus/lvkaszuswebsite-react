@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
                  /about_me
 
@@ -13,6 +13,8 @@
 
 import { Helmet } from 'react-helmet';
 
+import { useTranslation } from 'react-i18next';
+
 import Navbar from './components/Navbar';
 
 import AnimatedLogo from './components/AnimatedLogo';
@@ -22,6 +24,8 @@ import { NavLink } from 'react-router-dom';
 import './Core.css';
 
 function AboutMe() {
+  const { t } = useTranslation();
+
   return (
     <div className='font-fira font-bold text-center p-4 w-800px'>
       <Helmet>
@@ -38,7 +42,7 @@ function AboutMe() {
 
       <AnimatedLogo />
 
-      <p className='font-normal text-sm sm:text-xl my-6'>kim jestem?</p>
+      <p className='font-normal text-sm sm:text-xl my-6'>{t('about_me-titletext')}</p>
 
       <img
         src='/images/me/me_1.jpg'
@@ -46,20 +50,15 @@ function AboutMe() {
         className='hidden w-45 h-280px float-left border border-white sm:block'
       />
 
-      <p className='font-light text-xs float-none w-full mr-4 mb-0 leading-normal break-words text-center sm:text-sm sm:float-right sm:w-1/2 sm:text-left'>Nazywam się Łukasz, znany bardziej jako &quot;lvkaszus&quot;. Interesuję się informatyką każdego rodzaju oraz programowaniem. Lubię odkrywać nowe rzeczy 😃 Uwielbiam się bawić w halach z serwerami i innymi urządzeniami teleinformatycznymi. To, że interesuję się informatyką nie oznacza że nie dotknąłem żadnej dziewczyny jak wiele głupich ludzi myśli. 😉<br /><br />Mój opis który teraz czytasz, jak i ogólnie całą tą stronę napisałem samemu korzystając z czystego pliku .JSX i kilku wtyczek ułatwiających życie, ciekawie prawda? 😄
+      <p className='font-light text-xs float-none w-full mr-4 mb-0 leading-normal break-words text-center sm:text-sm sm:float-right sm:w-1/2 sm:text-left'>{t('about_me-biogram1')}<br /><br />{t('about_me-biogram2')}
       </p>
 
       <div className='clear-both' />
 
-      <p className='font-normal text-sm text-red-500 sm:hidden'>
-        Na tej stronie jest moje zdjęcie. Aby je wyświetlić, uruchom tę stronę
-        na szerszym ekranie!
-      </p>
+      <p className='font-normal text-sm text-red-500 sm:hidden'>{t('about_me-tsdw')}</p>
 
       <div className='mt-20px'>
-        <NavLink exact="true" to="/" className='text-sm underline text-subtitleColor'>
-          Moje media społecznościowe znajdziesz, klikając w ten link
-        </NavLink>
+        <NavLink exact="true" to="/" className='text-sm underline text-subtitleColor'>{t('about_me-smb')}</NavLink>
       </div>
     </div>
   );
