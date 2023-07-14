@@ -43,5 +43,6 @@ If you want to deploy this website on your own server, follow these steps:
 - This project uses React library. (https://github.com/facebook/react)
 - This project uses Vite library. (https://github.com/vitejs/vite)
 - This project uses Axios library. (https://github.com/axios/axios)
+- This project uses i18n for React library. (https://github.com/i18next/react-i18next)
 - This project uses Font Awesome for React library. (https://github.com/FortAwesome/react-fontawesome)
 - This project uses Fira Code font. (https://github.com/tonsky/FiraCode)
