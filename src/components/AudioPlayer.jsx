@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
                  Audio Player
                  
@@ -13,13 +13,20 @@
 
 import { useEffect, useRef } from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
 const AudioPlayer = () => {
+  
   const SongFile = "/files/music/radical_redemption-nolz-kingpin.mp3";
   const SongName = "Radical Redemption & Nolz - Kingpin 🤘🏼";
   
+
+
+  const { t } = useTranslation();
+
   const audioRef = useRef(null);
   const playBtnRef = useRef(null);
   const pauseBtnRef = useRef(null);
@@ -65,11 +72,11 @@ const AudioPlayer = () => {
       <audio id="myAudio" src={SongFile} ref={audioRef} />
       
       <div id="audioControls">
-        <button id="playBtn" className="bg-transparent border-none text-white text-base font-normal cursor-pointer p-2 my-2" ref={playBtnRef}>
+        <button id="playBtn" className="bg-transparent border-none text-white text-base font-normal cursor-pointer p-2 my-2" title="Play" ref={playBtnRef}>
             <FontAwesomeIcon icon={faPlay} className='mr-2' />
         </button>
         
-        <button id="pauseBtn" className="bg-transparent border-none text-white text-base font-normal cursor-pointer p-2 my-2" ref={pauseBtnRef}>
+        <button id="pauseBtn" className="bg-transparent border-none text-white text-base font-normal cursor-pointer p-2 my-2" title="Pause" ref={pauseBtnRef}>
             <FontAwesomeIcon icon={faPause} className='mr-2' />
         </button>
         
@@ -81,7 +88,7 @@ const AudioPlayer = () => {
       </div>
       
       <p id="currentSongName" className='font-bold text-sm'>
-        Aktualna piosenka: <br></br><span id="currentSongTitle" className='font-light'>{SongName}</span>
+        {t('home-ap-cs')} <br></br><span id="currentSongTitle" className='font-light'>{SongName}</span>
       </p>
     </div>
   );

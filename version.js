@@ -10,5 +10,5 @@
 */
 
 export const getVersion = () => {
-    return import.meta.env.VITE_APP_VERSION || '4.2';
+    return import.meta.env.VITE_APP_VERSION || '4.21';
 };

@@ -22,11 +22,13 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShareFromSquare, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faShareFromSquare } from '@fortawesome/free-solid-svg-icons/faShareFromSquare';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
 
 import './Core.css';
 
-function Contact() {
+const Contact = () => {
     const { t } = useTranslation();
 
     return (

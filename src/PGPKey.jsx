@@ -22,11 +22,16 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faKey, faTriangleExclamation, faLock, faDownload, faHouse } from '@fortawesome/free-solid-svg-icons';
+
+import { faKey } from '@fortawesome/free-solid-svg-icons/faKey';
+import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons/faTriangleExclamation';
+import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
+import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload';
+import { faHouse } from '@fortawesome/free-solid-svg-icons/faHouse';
 
 import './Core.css';
 
-function PGPKey() {
+const PGPKey = () => {
     const { t } = useTranslation();
 
     return (

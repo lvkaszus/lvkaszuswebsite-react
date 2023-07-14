@@ -21,7 +21,7 @@ import { useTranslation } from 'react-i18next';
 
 import './Core.css';
 
-function Info() {
+const Info = () => {
   const { t } = useTranslation();
 
     return (

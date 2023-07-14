@@ -1,6 +1,6 @@
 /*
 
-    lvkaszusWebsite-React --- version: 4.1
+    lvkaszusWebsite-React --- version: 4.2
     
                   HTTP 404
                   
@@ -19,7 +19,7 @@ import AnimatedLogo from './AnimatedLogo';
 
 import '../Core.css';
 
-function NotFound() {
+const NotFound = () => {
   return (
     <div className='font-fira font-bold text-center p-4'>
       <Helmet>

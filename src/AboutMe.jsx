@@ -23,7 +23,7 @@ import { NavLink } from 'react-router-dom';
 
 import './Core.css';
 
-function AboutMe() {
+const AboutMe = () => {
   const { t } = useTranslation();
 
   return (

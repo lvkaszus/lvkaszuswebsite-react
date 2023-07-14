@@ -23,7 +23,7 @@ import { useTranslation } from 'react-i18next';
 
 import './Core.css';
 
-function Home() {
+const Home = () => {
   const { t } = useTranslation();
 
   return (
