@@ -15,8 +15,6 @@ If you want to deploy this website on your own server, follow these steps:
 
 - Update the package lists and packages on your system. For example: `sudo apt update && sudo apt upgrade`
 
-- Install NPM package using `sudo apt install npm`
-
 - Install NVM package using `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
   
   Also, execute commands that are displayed after installation of NVM:
