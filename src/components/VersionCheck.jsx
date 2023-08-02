@@ -15,8 +15,6 @@ import { useEffect, useState } from 'react';
 
 import axios from 'axios';
 
-import { getVersion } from '../../version.js';
-
 export const VersionCheck = () => {
   const [latestVersion, setLatestVersion] = useState(['']);
 
@@ -35,7 +33,7 @@ export const VersionCheck = () => {
     fetchLatestVersion();
   }, []);
 
-  const currentVersion = getVersion();
+  const currentVersion = '4.22';
   const isLatestVersion = currentVersion === latestVersion;
 
   return { currentVersion, latestVersion, isLatestVersion };

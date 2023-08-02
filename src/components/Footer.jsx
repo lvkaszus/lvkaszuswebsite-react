@@ -23,7 +23,7 @@ const Footer = () => {
   const { currentVersion, latestVersion, isLatestVersion } = VersionCheck();
 
   return (
-    <footer className="font-fira absolute hidden bottom-5 w-full text-center lg:block">
+    <footer className="font-fira absolute hidden bottom-5 w-full text-center xl:block">
       <NavLink exact="true" to="/" className="text-xs no-underline">
         <p className="my-1 py-0 text-linkFooterColor">
           lvkaszus™ // @lvkaszus 2022-2023
