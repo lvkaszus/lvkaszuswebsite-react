@@ -37,7 +37,7 @@ const Footer = lazy(() => import("./Components/Footer.jsx"))
 
 const NotFound = lazy(() => import("./Components/NotFound.jsx"))
 
-import i18n from './components/i18n';
+import i18n from './Components/i18n';
 
 ReactDOM.createRoot(document.getElementById('flex-container')).render(
   <I18nextProvider i18n={i18n}>

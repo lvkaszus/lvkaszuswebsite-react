@@ -13,9 +13,9 @@
 
 import { Helmet } from 'react-helmet';
 
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 
-import AnimatedLogo from './components/AnimatedLogo';
+import AnimatedLogo from './Components/AnimatedLogo';
 
 import { useTranslation } from 'react-i18next';
 

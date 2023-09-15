@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 
 import { useTranslation } from 'react-i18next';
 
-import Navbar from '../components/Navbar';
+import Navbar from '../Components/Navbar';
 
 import '../Core.css';
 

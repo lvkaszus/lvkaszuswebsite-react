@@ -33,7 +33,7 @@ export const VersionCheck = () => {
     fetchLatestVersion();
   }, []);
 
-  const currentVersion = '4.22';
+  const currentVersion = '4.23';
   const isLatestVersion = currentVersion === latestVersion;
 
   return { currentVersion, latestVersion, isLatestVersion };

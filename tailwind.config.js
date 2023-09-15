@@ -39,7 +39,7 @@ export default {
       },
       height: {
         '1px': '1px',
-        '280px': '280px',
+        '200px': '200px',
       },
       colors: {
         backgroundColor: '#000000',

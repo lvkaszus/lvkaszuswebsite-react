@@ -13,11 +13,11 @@
 
 import { Helmet } from 'react-helmet';
 
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 
-import AnimatedLogo from './components/AnimatedLogo';
-import SmartSocialButtons from './components/SmartSocialButtons';
-import AudioPlayer from './components/AudioPlayer';
+import AnimatedLogo from './Components/AnimatedLogo';
+import SmartSocialButtons from './Components/SmartSocialButtons';
+import AudioPlayer from './Components/AudioPlayer';
 
 import { useTranslation } from 'react-i18next';
 

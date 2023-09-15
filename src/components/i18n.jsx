@@ -14,8 +14,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import translationEN from '../locales/en.json';
-import translationPL from '../locales/pl.json';
+import translationEN from '../Locales/en.json';
+import translationPL from '../Locales/pl.json';
 
 const detectBrowserLanguage = () => {
   const userLang = navigator.language || navigator.userLanguage;

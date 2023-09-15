@@ -20,8 +20,8 @@ import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
 const AudioPlayer = () => {
   
-  const SongFile = "/files/music/radical_redemption-nolz-kingpin.mp3";
-  const SongName = "Radical Redemption & Nolz - Kingpin 🤘🏼";
+  const SongFile = "/files/music/cz_kind-party_hard-hotteinz_wob-cut.mp3";
+  const SongName = "C.Z-KiND Live - Party Hard 🤪 @ HOTTEinz Wob (Setcut)";
   
 
 
@@ -68,7 +68,7 @@ const AudioPlayer = () => {
   });
   
   return (
-    <div id="lvkaszusPlayer" className='w-40 mx-auto'>
+    <div id="lvkaszusPlayer" className='w-48 mx-auto'>
       <audio id="myAudio" src={SongFile} ref={audioRef} />
       
       <div id="audioControls">
@@ -80,7 +80,7 @@ const AudioPlayer = () => {
             <FontAwesomeIcon icon={faPause} className='mr-2' />
         </button>
         
-        <div id="progressContainer" className='w-full'>
+        <div id="progressContainer" className='w-50 mx-auto'>
           <div id="progressBar" className="bg-white text-white w-full h-1px my-1" ref={progressRef}></div>
         </div>
         
