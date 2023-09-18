@@ -3,5 +3,7 @@ Disallow: /cdn-cgi/
 Disallow: /assets/
 Disallow: /files/
 Disallow: /images/
+Allow: /assets/*.css
+Allow: /assets/*.js
 
 Sitemap: https://lvkasz.us/sitemap.xml
