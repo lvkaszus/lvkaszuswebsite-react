@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
 
         <div className="my-3">
-            <a className="text-xs sm:text-base text-sky-400" href="mailto:lukasz@lvkasz.us">
+            <a className="text-xs sm:text-base text-sky-400" href="mailto:hello@lvkasz.us">
                 <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
                 <span>{t('contact-meat')}</span>
             </a>
