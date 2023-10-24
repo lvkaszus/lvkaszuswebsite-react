@@ -2,6 +2,8 @@
 
 - https://lvkasz.us - Core Source Code of my public website (React + Vite. lvkaszusSocialMediaAPI that is installed on my website is not included, but you can make your own using for example FastAPI, Telethon, integration with Instagram API etc.)
 
+<img src="lvkaszuswebsite.png" alt="Screenshot that represents homepage of my website" style="">
+
 
 ## Installation
 
