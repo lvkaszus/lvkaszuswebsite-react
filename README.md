@@ -5,36 +5,50 @@
 
 ## Installation
 
-If you want to deploy this website on your own server, follow these steps:
 
-- Get a domain name and a server with preferably Linux installed on it. For free, you can get a server using Oracle Cloud and get up to 4 cores and 24GB of RAM to use on ARM64 architecture (overkill for this project, but if you want to deploy some other applications than that, it can be useful!)
+*If you want to deploy this website on your own server, follow these steps:*
 
-- Point your domain name to your server by editing DNS records in your domain registrar. You can use Cloudflare DNS for this. If you want to use Cloudflare, you must change the NS records in your domain registrar pointing to Cloudflare (NS1: xxxxx.ns.cloudflare.com   NS2: xxxxx.ns.cloudflare.com) and then change the main DNS records (A, CNAME etc.) in Cloudflare Dashboard to point to your server. You also will get free SSL/TLS certificate for your domain.
 
-- Log into your new server using SSH.
+- Get a domain name and a server with preferably Linux installed on it <br> **Cloud Solutions with a Free-Tier: [Detailed list](https://github.com/cloudcommunity/Cloud-Free-Tier-Comparison)**
 
-- Update the package lists and packages on your system. For example: `sudo apt update && sudo apt upgrade`
+- Point your domain name to your server by editing DNS records in your domain registrar <br> **Detailed help: [OVHcloud](https://support.us.ovhcloud.com/hc/en-us/articles/360012042099-How-to-Connect-Your-VPS-to-Your-Domain-Name) / [GoDaddy](https://www.godaddy.com/help/change-an-a-record-19239) / [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9837/46/how-to-connect-a-domain-to-a-server-or-hosting/)**
 
-- Install NVM package using `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
+After that, connect to your server using SSH or other remote shell solution
+- If you didn't receive other credentials besides password: $`ssh <username>@<ip_address>`
+- If you got SSH private key: $`ssh -i <your_ssh_private_key_file_path> <username>@<ip_address>`
+
+Update the package lists and packages on your system - if your server is running Debian/Ubuntu or any based-distro, it will look like this
+- $`sudo apt update && sudo apt dist-upgrade`
+
+Install NVM (Node Version Manager) by downloading and executing this script
+- $`curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
   
   Also, execute commands that are displayed after installation of NVM:
-  ```
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-  ```
+  - $`export NVM_DIR="$HOME/.nvm"`
+  - $`[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"`
+  - $`[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"`
 
-- Install Node using `nvm install node`
+Install Node Runtime Environment
+- $`nvm install node`
  
-- Finally after installing all required packages, you can begin installing all project packages using: `npm install`
+And finally, after installing all required packages - you can start by cloning this Git repository
+- `git clone https://github.com/lvkaszus/lvkaszuswebsite-react`
 
-- Recommended: Check if everything is running correctly by running `npm run dev` and entering URL displayed by Vite Development Server in your browser.
+Change directory to cloned repository
+- `cd lvkaszuswebsite-react`
 
-- If everything is running correctly, you can terminate Vite Development Server by using `Ctrl+C` on your keyboard and begin building sources by using this command: `npm run build`
+Install all project dependencies using NPM (Node Package Manager)
+- $`npm install`
 
-- When building sources completed, just move all contents of the `dist/` folder to your nginx webserver index directory - for example: `/var/www/html`
+After installing all dependencies, begin building sources by using this command
+- $`npm run build`
 
-- And thats it! You can now install your SSL/TLS certificate to NGINX and finish setup of some other things.
+If building process has ended successfully - Just move all contents of the `dist/` folder to your NGINX web server index directory - for example: `/var/www/`
+- $`sudo cp -r dist/ /var/www/mywebsite`
+- $`sudo chown -R www-data:www-data /var/www/mywebsite`
+
+
+*And thats it! You can now install your SSL/TLS certificate to NGINX and finish setup of some other things.*
 
 
 ## Credits
