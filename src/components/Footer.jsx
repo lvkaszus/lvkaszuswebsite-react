@@ -30,17 +30,14 @@ const Footer = () => {
         </p>
         
         <p className="my-1 py-0 text-linkFooterColor">
-        <FontAwesomeIcon icon={faCloudflare} className='mr-2' />
-        <span>CloudflareDNS + </span>
+          <FontAwesomeIcon icon={faServer} className='mr-2' />
+          <span>lvkaszusServer + </span>
 
-        <FontAwesomeIcon icon={faServer} className='mr-2' />
-        <span>lvkaszusServer + </span>
+          <FontAwesomeIcon icon={faLinux} className='mr-2' />
+          <span>Linux + </span>
 
-        <FontAwesomeIcon icon={faLinux} className='mr-2' />
-        <span>Linux + </span>
-
-        <FontAwesomeIcon icon={faReact} className='mr-2' />
-        <span>React + Vite = </span><FontAwesomeIcon icon={faHeart} className='mr-2' />
+          <FontAwesomeIcon icon={faReact} className='mr-2' />
+          <span>React + Vite = </span><FontAwesomeIcon icon={faHeart} className='mr-2' />
         </p>
 
         {isLatestVersion ? (
