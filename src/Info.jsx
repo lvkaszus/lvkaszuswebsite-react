@@ -56,15 +56,8 @@ const Info = () => {
         <p className='font-normal text-xs sm:text-base text-left mt-4 sm:mt-8 mb-2'>{t('info-usbe')}</p>
         
         <li className='font-normal text-xs sm:text-base text-left mt-1'>
-          DNS: <span className='font-light'>
-            Cloudflare
-          </span>
-        </li>
-
-        <li className='font-normal text-xs sm:text-base text-left mt-1'>
           {t('info-tlscert')} <span className='font-light'>
-            Cloudflare </span><span className='font-normal'>(Google Trust Services)
-            </span>
+            Let's Encrypt! </span>
         </li>
 
         <li className='font-normal text-xs sm:text-base text-left mt-1'>
