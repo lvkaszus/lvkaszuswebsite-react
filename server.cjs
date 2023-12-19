@@ -13,5 +13,5 @@ app.use(compression());
 app.use(express.static(distPath));
 
 app.listen(port, () => {
-  console.log(`[lvkaszusWebsite]   Express Server is running on port ${port}!`);
+  console.log(`[lvkaszusWebsite-React]   Express Server is running on port ${port}!`);
 });

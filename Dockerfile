@@ -2,6 +2,7 @@ FROM node:current-alpine3.19
 
 WORKDIR /lvkaszuswebsite-react
 
+RUN apk add --no-cache tzdata
 ENV TZ="Europe/Warsaw"
 
 
