@@ -20,8 +20,8 @@ import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
 const AudioPlayer = () => {
   
-  const SongFile = "/files/music/cz_kind-party_hard-hotteinz_wob-cut.mp3";
-  const SongName = "C.Z-KiND Live - Party Hard 🤪 @ HOTTEinz Wob (Setcut)";
+  const SongFile = "/files/music/rebelion_vertile-numb.mp3";
+  const SongName = "Rebelion & Vertile - Numb";
   
 
 
