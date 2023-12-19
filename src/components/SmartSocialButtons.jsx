@@ -70,12 +70,6 @@ const SmartSocialButtons = () => {
         </div>
 
         <div className='my-3'>
-          <a href='https://bere.al/lvkaszus' className='text-base no-underline text-linkColor py-5px border border-gray-400 font-light flex items-center justify-center hover:text-gray-400 hover:border-2 hover:shadow-white transition-all duration-200 ease-in-out' target='_blank' rel='noreferrer'>
-            <span>BeReal.</span>
-          </a>
-        </div>
-
-        <div className='my-3'>
           <a href='https://reddit.com/user/lvkaszus' className='text-base no-underline text-linkColor py-5px border border-orange-400 font-light flex items-center justify-center hover:text-orange-400 hover:border-2 hover:shadow-orange transition-all duration-200 ease-in-out' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={faRedditAlien} className='mr-2' />
             <span>Reddit (K: {data.reddit_karma})</span>
