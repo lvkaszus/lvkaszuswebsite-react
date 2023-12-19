@@ -1,0 +1,44 @@
+/*
+
+    lvkaszusWebsite-React --- version: 4.2
+    
+              Version Checking
+                 
+   GitHub version checking for Page Footer!
+
+      Designed and written by: @lvkaszus
+             (https://lvkasz.us)
+             
+*/
+
+import { useEffect, useState } from 'react';
+
+import axios from 'axios';
+
+export const VersionCheck = () => {
+  const [latestVersion, setLatestVersion] = useState(['']);
+
+  const fetchLatestVersion = async () => {
+    try {
+      const gitData = await axios.get('https://api.github.com/repos/lvkaszus/lvkaszuswebsite-react/releases/latest');
+      const latestVersion = gitData.data.tag_name;
+
+      setLatestVersion(latestVersion);
+    } catch (error) {
+      console.error("[lvkaszusWebsite-React] fetchLatestVersion:  Fetch latest release from GitHub  -  ERROR: " + error);
+    }
+  };
+
+  useEffect(() => {
+    fetchLatestVersion();
+  }, []);
+
+  
+  // Define current version of this source code:
+  const currentVersion = '4.24';
+
+
+  const isLatestVersion = currentVersion === latestVersion;
+
+  return { currentVersion, latestVersion, isLatestVersion };
+};
