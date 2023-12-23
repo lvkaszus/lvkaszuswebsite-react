@@ -33,7 +33,7 @@ Install NVM (Node Version Manager) by downloading and executing this script
 Install Node Runtime Environment
 - $`nvm install node`
  
-And finally, after installing all required packages - you can start by cloning this Git repository
+And finally, after installing all required packages - you can start by cloning this Git repository if you want to download latest version.<br>**If you want to download major releases, go to [Releases](https://github.com/lvkaszus/lvkaszuswebsite-react/releases) page!**
 - `git clone https://github.com/lvkaszus/lvkaszuswebsite-react`
 
 Change directory to cloned repository
