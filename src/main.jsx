@@ -30,6 +30,7 @@ import LoadingScreen from './components/LoadingScreen.jsx';
 const Home = lazy(() => import("./Home.jsx"))
 const AboutMe = lazy(() => import("./AboutMe.jsx"))
 const Contact = lazy(() => import("./Contact.jsx"))
+const Donate = lazy(() => import("./Donate.jsx"))
 const PGP = lazy(() => import("./PGPKey.jsx"))
 const Info = lazy(() => import("./Info.jsx"))
 
@@ -54,6 +55,10 @@ ReactDOM.createRoot(document.getElementById('flex-container')).render(
           </>} />
           <Route path="/contact" element={<>
             <Contact />
+            <Footer />
+          </>} />
+          <Route path="/donate" element={<>
+            <Donate />
             <Footer />
           </>} />
           <Route path="/pgp" element={<>

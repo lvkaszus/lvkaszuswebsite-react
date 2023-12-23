@@ -29,6 +29,9 @@ const Navbar = () => {
       <NavLink to="/contact" className="underline ml-2 mr-2">
         {t('navbar-contact')}
       </NavLink>
+      <NavLink to="/donate" className="underline ml-2 mr-2">
+        {t('navbar-donate')}
+      </NavLink>
       <NavLink to="/pgp" className="underline ml-2 mr-2">
         {t('navbar-pgp')}
       </NavLink>

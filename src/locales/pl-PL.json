@@ -5,6 +5,7 @@
     "navbar-home": "główna",
     "navbar-about_me": "o mnie",
     "navbar-contact": "kontakt",
+    "navbar-donate": "dotacje",
     "navbar-pgp": "klucz pgp",
     "navbar-info": "informacje",
 
@@ -45,6 +46,15 @@
     "contact-msm": "Moje media społecznościowe",
     "contact-meat": "Mój Adres E-mail (tradycyjny!)",
     "contact-meap": "Mój Adres E-mail (tylko PGP!)",
+
+
+    "donate-titletext": "chciałbyś wysłać mi dotację?",
+
+    "donate-text1": "Możesz to zrobić, korzystając z linków poniżej! Jeżeli korzystasz z Polskiego banku, zalecane jest abyś skorzystał z pierwszej metody przeznaczonej dla osób zarejestrowanych w Polskich bankach. Aczkolwiek jeżeli jesteś osobą która posiada bank inny niż Polski, zalecane jest aby skorzystać z drugiej międzynarodowej metody.",
+    "donate-text2": "Również, możesz wysłać mi dotację w kryptowalutach! W tym przypadku skopiuj mój adres portfela przeznaczony na odbieranie dotacji poniżej. Dostępne kryptowaluty to Bitcoin, Monero oraz Litecoin.",
+
+    "donate-polishmethod": "Wyślij dotację używając Tipo (Polska)",
+    "donate-internationalmethod": "Wyślij dotację używając Liberapay (Międzynarodowe)",
 
 
     "pgp-titletext1": "Mój Klucz PGP",

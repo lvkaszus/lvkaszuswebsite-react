@@ -5,6 +5,7 @@
     "navbar-home": "home",
     "navbar-about_me": "about me",
     "navbar-contact": "contact",
+    "navbar-donate": "donate",
     "navbar-pgp": "pgp key",
     "navbar-info": "informations",
 
@@ -45,6 +46,15 @@
     "contact-msm": "My social media",
     "contact-meat": "My email address (traditional!)",
     "contact-meap": "My email address (only with PGP!)",
+
+
+    "donate-titletext": "do you want to send donation to me?",
+
+    "donate-text1": "You can do this by using the links below! If you use a Polish bank, it is recommended that you use the first method designed for people registered in Polish banks. However, if you are a person who has a bank other than a Polish bank, it is recommended that you use the second international method.",
+    "donate-text2": "Also, you can send me a donation in cryptocurrencies! In this case, copy my wallet address designated for receiving donations below. The available cryptocurrencies are Bitcoin, Monero and Litecoin.",
+
+    "donate-polishmethod": "Send donation using Tipo (Polska)",
+    "donate-internationalmethod": "Send donation using Liberapay (Międzynarodowe)",
 
 
     "pgp-titletext1": "My PGP Key",
