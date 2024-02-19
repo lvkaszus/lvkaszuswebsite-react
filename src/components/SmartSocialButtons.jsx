@@ -20,11 +20,8 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
-import { faStar } from '@fortawesome/free-solid-svg-icons/faStar';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons/faCircleQuestion';
-
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
-import { faSnapchat } from '@fortawesome/free-brands-svg-icons/faSnapchat';
 import { faRedditAlien } from '@fortawesome/free-brands-svg-icons/faRedditAlien';
 import { faComment } from '@fortawesome/free-solid-svg-icons/faComment';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons/faTelegram';
@@ -63,16 +60,9 @@ const SmartSocialButtons = () => {
         </div>
 
         <div className='my-3'>
-          <a href='https://snapchat.com/add/not.lvkaszus' className='text-base no-underline text-linkColor py-5px border border-yellow-200 font-light flex items-center justify-center hover:text-yellow-200 hover:border-2 hover:shadow-yellow transition-all duration-200 ease-in-out'>
-            <FontAwesomeIcon icon={faSnapchat} className='mr-2' />
-            <span>Snapchat (<FontAwesomeIcon icon={faStar} className='ml-1' /> {data.snapchat_score})</span>
-          </a>
-        </div>
-
-        <div className='my-3'>
           <a href='https://reddit.com/user/lvkaszus' className='text-base no-underline text-linkColor py-5px border border-orange-400 font-light flex items-center justify-center hover:text-orange-400 hover:border-2 hover:shadow-orange transition-all duration-200 ease-in-out' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={faRedditAlien} className='mr-2' />
-            <span>Reddit (K: {data.reddit_karma})</span>
+            <span>Reddit</span>
           </a>
         </div>
 
