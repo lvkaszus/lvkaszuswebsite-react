@@ -18,8 +18,6 @@ import LanguageSelector from './components/LanguageSelector';
 
 import AnimatedLogo from './components/AnimatedLogo';
 
-import { NavLink } from 'react-router-dom';
-
 import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -34,7 +32,7 @@ const Donate = () => {
     const { t } = useTranslation();
 
     return (
-      <div className='font-fira font-bold text-center p-4 w-800px'>
+      <div className='font-fira font-bold text-center p-4 w-[800px]'>
         <Helmet>
             <title>Dotacje</title>
 
@@ -70,7 +68,7 @@ const Donate = () => {
         </div>
 
 
-        <div className='my-3 break-words w-300px mx-auto sm:w-full'>
+        <div className='my-3 break-words w-[300px] mx-auto sm:w-full'>
             <p className='font-normal text-yellow-400 text-xs sm:text-base mt-6'>
                 <FontAwesomeIcon icon={faBitcoin} className='mr-2' />
                 bc1qpwsvxfwpjxkdkppytxj8yzpnxquvm4fa99uqgt

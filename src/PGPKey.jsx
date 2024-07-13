@@ -36,7 +36,7 @@ const PGPKey = () => {
     const { t } = useTranslation();
 
     return (
-      <div className='font-fira font-bold text-center p-4 w-600px'>
+      <div className='font-fira font-bold text-center p-4 w-[600px]'>
         <Helmet>
             <title>Mój Klucz PGP</title>
 
@@ -58,8 +58,8 @@ const PGPKey = () => {
 
         <p className='font-light text-sm sm:text-base'>{t('pgp-text1')}<br/><u>{t('pgp-text2')}</u></p>
 
-        <p className='mt-20px text-sm sm:text-base'>{t('pgp-textfp')}</p>
-        <code className='font-light text-xxs sm:text-xs sm:font-normal border bg-gray-800 mb-15px py-1 px-1'>A607 30D6 65D5 04DC 49C3 50D7 85AF 58B1 5611 854A</code> 
+        <p className='mt-[20px] text-sm sm:text-base'>{t('pgp-textfp')}</p>
+        <code className='font-light text-[10px] sm:text-xs sm:font-normal border bg-gray-800 mb-[15px] py-1 px-1'>A607 30D6 65D5 04DC 49C3 50D7 85AF 58B1 5611 854A</code> 
 
         <div className='mt-6 mb-2'>
             <a className='text-xs sm:text-base text-red-500 transition-all duration-200 ease-in-out' href='mailto:pgp@lvkasz.us'>
@@ -68,16 +68,16 @@ const PGPKey = () => {
             </a>
         </div>
 
-        <div className='w-300px mx-auto'>
-            <div className='my-10px'>
-                <a className='text-sm no-underline text-linkColor py-3px flex items-center justify-center border border-gray-400 font-light hover:text-mainColor hover:border-mainColor hover:shadow-white transition-all duration-200 ease-in-out' href='/files/download/pgp/lvkaszus-PublicKey.pub' target='_blank' rel='noreferrer'>
+        <div className='w-[300px] mx-auto'>
+            <div className='my-[10px]'>
+                <a className='text-sm no-underline text-linkColor py-[3px] flex items-center justify-center border border-gray-400 font-light hover:text-mainColor hover:border-mainColor hover:shadow-white transition-all duration-200 ease-in-out' href='/files/download/pgp/lvkaszus-PublicKey.pub' target='_blank' rel='noreferrer'>
                     <FontAwesomeIcon icon={faDownload} className='mr-2' />
                     <span>{t('pgp-dlpgp')}</span>
                 </a>
             </div>
 
             <div className='my-10'>
-                <NavLink exact="true" to="/" className='text-sm no-underline text-linkColor py-3px flex items-center justify-center border border-sky-400 font-light hover:text-sky-200 hover:border-sky-400 hover:shadow-blue transition-all duration-200 ease-in-out'>
+                <NavLink exact="true" to="/" className='text-sm no-underline text-linkColor py-[3px] flex items-center justify-center border border-sky-400 font-light hover:text-sky-200 hover:border-sky-400 hover:shadow-blue transition-all duration-200 ease-in-out'>
                     <FontAwesomeIcon icon={faHouse} className='mr-2' />
                     <span>{t('pgp-bthp')}</span>
                 </NavLink>

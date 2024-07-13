@@ -17,12 +17,12 @@ import Navbar from './components/Navbar';
 import LanguageSelector from './components/LanguageSelector';
 
 import AnimatedLogo from './components/AnimatedLogo';
-import SmartSocialButtons from './components/SmartSocialButtons';
 import AudioPlayer from './components/AudioPlayer';
 
 import { useTranslation } from 'react-i18next';
 
 import './Core.css';
+import SocialMediaButtons from './components/SocialMediaButtons';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -45,7 +45,7 @@ const Home = () => {
 
       <p className='font-normal text-base my-6'>{t('home-titletext')}</p>
 
-      <SmartSocialButtons />
+      <SocialMediaButtons />
 
       <AudioPlayer />
     </div>

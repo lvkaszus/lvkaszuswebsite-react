@@ -20,8 +20,8 @@ import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
 const AudioPlayer = () => {
   
-  const SongFile = import.meta.env.VITE_AUDIOPLAYER_SONG_FILE || "/files/music/rebelion_vertile-numb.mp3";
-  const SongName = import.meta.env.VITE_AUDIOPLAYER_SONG_NAME || "Rebelion & Vertile - Numb";
+  const SongFile = import.meta.env.VITE_AUDIOPLAYER_SONG_FILE || "/files/music/luuzz-intro_paraneujahr_160bpm.mp3";
+  const SongName = import.meta.env.VITE_AUDIOPLAYER_SONG_NAME || "+𝕃𝕦𝕦ℤ𝕫+ - Intro Paraneujahr 160Bpm @ K7Stendal 31.12.22";
   
 
 
@@ -81,7 +81,7 @@ const AudioPlayer = () => {
         </button>
         
         <div id="progressContainer" className='w-50 mx-auto'>
-          <div id="progressBar" className="bg-white text-white w-full h-1px my-1" ref={progressRef}></div>
+          <div id="progressBar" className="bg-white text-white w-full h-[1px] my-1" ref={progressRef}></div>
         </div>
         
         <div id="currentTime" className='text-center text-white text-base' ref={timeRef}></div>

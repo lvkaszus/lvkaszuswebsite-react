@@ -35,7 +35,7 @@ export const VersionCheck = () => {
 
   
   // Define current version of this source code:
-  const currentVersion = '4.24';
+  const currentVersion = '4.25';
 
 
   const isLatestVersion = currentVersion === latestVersion;

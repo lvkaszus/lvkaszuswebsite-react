@@ -18,7 +18,7 @@ import LanguageSelector from './components/LanguageSelector';
 
 import AnimatedLogo from './components/AnimatedLogo';
 
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 
@@ -33,7 +33,7 @@ const Contact = () => {
     const { t } = useTranslation();
 
     return (
-      <div className='font-fira font-bold text-center p-4 w-800px'>
+      <div className='font-fira font-bold text-center p-4 w-[800px]'>
         <Helmet>
             <title>Kontakt</title>
 
@@ -55,10 +55,10 @@ const Contact = () => {
         </p>
 
         <div className="my-3">
-            <NavLink exact="true" to="/" className="text-xs sm:text-base text-orange-400">
+            <Link exact="true" to="/" className="text-xs sm:text-base text-orange-400">
                 <FontAwesomeIcon icon={faShareFromSquare} className='mr-2' />
                 <span>{t('contact-msm')}</span>
-            </NavLink>
+            </Link>
         </div>
 
         <div className="my-3">

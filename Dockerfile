@@ -1,4 +1,4 @@
-FROM node:current-alpine3.19
+FROM node:lts-slim
 
 WORKDIR /lvkaszuswebsite-react
 
@@ -6,8 +6,8 @@ RUN apk add --no-cache tzdata
 ENV TZ="Europe/Warsaw"
 
 
-ENV AUDIOPLAYER_SONG_FILE="/files/music/rebelion_vertile-numb.mp3"
-ENV AUDIOPLAYER_SONG_NAME="Rebelion & Vertile - Numb"
+ENV AUDIOPLAYER_SONG_FILE="/files/music/luuzz-intro_paraneujahr_160bpm.mp3"
+ENV AUDIOPLAYER_SONG_NAME="+𝕃𝕦𝕦ℤ𝕫+ - Intro Paraneujahr 160Bpm @ K7Stendal 31.12.22"
 
 
 COPY package*.json ./

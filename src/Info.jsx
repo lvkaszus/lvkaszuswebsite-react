@@ -26,7 +26,7 @@ const Info = () => {
   const { t } = useTranslation();
 
     return (
-      <div className='font-fira font-bold text-center p-4 w-550px'>
+      <div className='font-fira font-bold text-center p-4 w-[550px]'>
         <Helmet>
             <title>Informacje</title>
 
@@ -41,7 +41,7 @@ const Info = () => {
 
         <AnimatedLogo />
 
-        <p className='font-bold text-xl mb-10px sm:text-2xl sm:mt-20px sm:mb-0'>lvkaszus™ Website</p>
+        <p className='font-bold text-xl mb-[10px] sm:text-2xl sm:mt-[20px] sm:mb-0'>lvkaszus™ Website</p>
         <p className='font-normal text-xs sm:text-base mb-4'>{t('info-wsdesc')}</p>
 
         <p className='font-light text-xs sm:text-base mb-2'>{t('info-titletext')}</p>
@@ -74,13 +74,7 @@ const Info = () => {
             NGINX
           </span>
         </li>
-
-        <li className='font-normal text-xs sm:text-base text-left mt-1'>
-          Social-Media API: <span className='font-light'>
-            lvkaszus SocialAPI </span><span className='font-normal'>(Python3 + telethon + requests + json etc.)
-            </span>
-        </li>
-
+        
 
         <p className='font-normal text-xs sm:text-base text-left mt-4 sm:mt-8 mb-2'>{t('info-usfe')}</p>
 

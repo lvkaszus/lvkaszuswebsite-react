@@ -27,20 +27,7 @@ export default {
         normal: 500,
         bold: 600,
       },
-      fontSize: {
-        xxs: '10px',
-      },
-      width: {
-        '300px': '300px',
-        '45': '45%',
-        '800px': '800px',
-        '550px': '550px',
-        '600px': '600px',
-      },
-      height: {
-        '1px': '1px',
-        '200px': '200px',
-      },
+
       colors: {
         backgroundColor: '#000000',
         mainColor: '#FFFFFF',
@@ -50,20 +37,10 @@ export default {
         linkActiveColor: '#888888',
         linkFooterColor: '#7F7F7F',
       },
-      margin: {
-        '10px': '10px',
-        '15px': '15px',
-        '20px': '20px',
-      },
-      padding: {
-        '3px': '3px',
-        '5px': '5px',
-        'full': '100%',
-      },
+
       boxShadow: {
         pink: '0 3px 15px #FF2DC0',
-        yellow: '0 3px 15px #F2FF00',
-        white: '0 3px 15px #FFFFFF',
+        gray: '0 3px 15px #D1D5DB',
         orange: '0 3px 15px #FF8800',
         blue: '0 3px 15px #00D0FF',
         lightorange: '0 3px 15px #FFDBB0',

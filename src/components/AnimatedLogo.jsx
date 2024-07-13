@@ -14,7 +14,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Frazy = [
+const phrases = [
   "informatyka",
   "sieci komputerowe",
   "technika komputerowa",
@@ -27,11 +27,11 @@ const Frazy = [
 
 function AnimatedLogo() {
   const { t } = useTranslation();
-  const [aktualnaFraza, setAktualnaFraza] = useState(0);
+  const [actualPhrase, setActualPhrase] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAktualnaFraza((prevFraza) => (prevFraza + 1) % Frazy.length);
+      setActualPhrase((prevPhrase) => (prevPhrase + 1) % phrases.length);
     }, 1000);
 
     return () => {
@@ -43,7 +43,7 @@ function AnimatedLogo() {
     <div>
       <img src='/images/core/lvkaszus-logo.webp' alt='lvkaszus™ Animated Glitch Logo' width='350px' height='125px' className='mx-auto'></img>
       
-      <div id="logo-description" className='m-0 font-light text-subtitleColor'>{t(Frazy[aktualnaFraza])}</div>
+      <div id="logo-description" className='m-0 font-light text-subtitleColor'>{t(phrases[actualPhrase])}</div>
     </div>
   );
 }
