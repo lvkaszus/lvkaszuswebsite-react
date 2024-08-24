@@ -11,13 +11,16 @@
 #             (https://lvkasz.us)
 #
 
-env | while IFS='=' read -r key value; do
-  if [[ $key == "AUDIOPLAYER_SONG_FILE" || $key == "AUDIOPLAYER_SONG_NAME" ]]; then
-    echo "VITE_${key}=\"${value}\""
-  fi
-done > .env
+echo "[lvkaszusWebsite-React]   Setting environment variables..."
+
+export VITE_AUDIOPLAYER_SONG_FILE=${AUDIOPLAYER_SONG_FILE}
+export VITE_AUDIOPLAYER_SONG_NAME=${AUDIOPLAYER_SONG_NAME}
+
+echo "[lvkaszusWebsite-React]   Environment variables set!"
+
 
 echo "[lvkaszusWebsite-React]   Starting building source files. Please wait!"
+
 npm run build
 
 if [ $? -eq 0 ]; then
