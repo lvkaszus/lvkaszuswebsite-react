@@ -2,7 +2,6 @@ FROM node:lts-slim
 
 WORKDIR /lvkaszuswebsite-react
 
-RUN apk add --no-cache tzdata
 ENV TZ="Europe/Warsaw"
 
 
