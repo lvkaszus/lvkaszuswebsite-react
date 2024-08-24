@@ -25,6 +25,8 @@ export const VersionCheck = () => {
 
       setLatestVersion(latestVersion);
     } catch (error) {
+      setLatestVersion('Unknown');
+
       console.error("[lvkaszusWebsite-React] fetchLatestVersion:  Fetch latest release from GitHub  -  ERROR: " + error);
     }
   };
@@ -35,7 +37,7 @@ export const VersionCheck = () => {
 
   
   // Define current version of this source code:
-  const currentVersion = '4.25';
+  const currentVersion = '4.26';
 
 
   const isLatestVersion = currentVersion === latestVersion;

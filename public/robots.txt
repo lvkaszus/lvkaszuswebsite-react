@@ -1,8 +1,4 @@
 User-Agent: *
-Disallow: /assets/
-Disallow: /files/
-Disallow: /images/
-Allow: /assets/*.css
-Allow: /assets/*.js
+Allow: /
 
 Sitemap: https://lvkasz.us/sitemap.xml

@@ -33,10 +33,10 @@ const SocialMediaButtons = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://lvsapi.lvkasz.us/endpoint');
+        const response = await axios.get('https://lvtos.lvkasz.us/data');
         setData(response.data);
       } catch (error) {
-        console.error("[lvkaszusWebsite-React] API:  fetchData:  Fetch data from social services  -  ERROR: " + error);
+        console.error("[lvkaszusWebsite-React] API:  fetchData:  Fetch online status from Telegram  -  ERROR: " + error);
       }
     };
 
@@ -74,7 +74,7 @@ const SocialMediaButtons = () => {
         <div className='my-3'>
           <a href='https://telegram.me/lvkaszus' className='text-base no-underline py-[5px] border border-sky-400 font-light flex items-center justify-center hover:text-sky-400 hover:border-2 hover:shadow-blue transition-all duration-200 ease-in-out' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={faTelegram} className='mr-2' />
-            <span>Telegram (<span className={data.telegram_isOnline ? 'text-green-400' : 'text-red-400'}>{data.telegram_isOnline ? '● Online' : '● Offline'}</span>)</span>
+            <span>Telegram (<span className={data.online ? 'text-green-400' : 'text-red-400'}>{data.online ? '● Online' : '● Offline'}</span>)</span>
           </a>
         </div>
 
