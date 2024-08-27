@@ -1,15 +1,17 @@
-# lvkaszusWebsite-React
+<div align="center">
+<h1>lvkaszusWebsite-React</h1>
+<p>Source Code of my public website (built with React + Vite)</p>
+  
+[My Official Website](https://lvkasz.us)
 
-- https://lvkasz.us - Core Source Code of my public website (built with React + Vite)
+</div>
 
-<img src="lvkaszuswebsite.png" alt="Screenshot that represents homepage of my website">
+![Screenshot that represents homepage of my website](lvkaszuswebsite.png)
 
-
-## Installation
-
-
-*If you want to deploy this website on your own server, follow these steps:*
-
+<div align="center">
+<h2>Installation</h2>
+<p>If you want to deploy this website on your own server, follow these steps:</p>
+</div>
 
 - Get a domain name and a server with preferably Linux installed on it <br> **Cloud Solutions with a Free-Tier: [Detailed list](https://github.com/cloudcommunity/Cloud-Free-Tier-Comparison)**
 
@@ -49,11 +51,10 @@ If building process has ended successfully - Just move all contents of the `dist
 - $`sudo cp -r dist/ /var/www/mywebsite`
 - $`sudo chown -R www-data:www-data /var/www/mywebsite`
 
+<p align="center">And thats it! You can now install your SSL/TLS certificate to NGINX and finish setup of some other things.</p>
 
-*And thats it! You can now install your SSL/TLS certificate to NGINX and finish setup of some other things.*
+<h2 align="center">Credits</h2>
 
-
-## Credits
 - This project uses React library. (https://github.com/facebook/react)
 - This project uses Vite library. (https://github.com/vitejs/vite)
 - This project uses Axios library. (https://github.com/axios/axios)
