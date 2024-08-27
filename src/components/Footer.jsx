@@ -41,9 +41,9 @@ const Footer = () => {
         </p>
 
         {isLatestVersion ? (
-          <p className="my-1 py-0 text-linkFooterColor">lvkaszusWebsite - version: {currentVersion} - 13.07.2024 : latest</p>
+          <p className="my-1 py-0 text-linkFooterColor">lvkaszusWebsite - version: {currentVersion} - 24.08.2024 : latest</p>
         ) : (
-          <p className="my-1 py-0 text-linkFooterColor">lvkaszusWebsite - version: {currentVersion} - 13.07.2024 : please upgrade to {latestVersion}!</p>
+          <p className="my-1 py-0 text-linkFooterColor">lvkaszusWebsite - version: {currentVersion} - 24.08.2024 : please upgrade to {latestVersion}!</p>
         )}
       </NavLink>
     </footer>
