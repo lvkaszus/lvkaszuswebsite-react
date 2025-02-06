@@ -51,7 +51,7 @@ const SocialMediaButtons = () => {
   return (
     <div className='w-[300px] mx-auto'>
         <div className='my-3'>
-          <a href='https://instagram.com/not.lvkaszus' className='text-base no-underline text-linkColor py-[5px] border border-pink-500 font-light flex items-center justify-center hover:text-pink-500 hover:border-2 hover:shadow-pink transition-all duration-200 ease-in-out' target='_blank' rel='noreferrer'>
+          <a href='https://instagram.com/lvkaszus' className='text-base no-underline text-linkColor py-[5px] border border-pink-500 font-light flex items-center justify-center hover:text-pink-500 hover:border-2 hover:shadow-pink transition-all duration-200 ease-in-out' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={faInstagram} className='mr-2' />
             <span>Instagram</span>
           </a>
