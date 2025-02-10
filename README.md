@@ -9,6 +9,11 @@
 ![Screenshot that represents homepage of my website](lvkaszuswebsite.png)
 
 <div align="center">
+<h2>Important notice!</h2>
+<p>This is most likely the final version (4.27) of this project. Future versions will be developed on an entirely new codebase, featuring a content management system (CMS) and a rewritten frontend in React with TypeScript. I've been learning TypeScript for a few weeks now, and I find it truly impressive - I only wish I had started using it much earlier 😶</p>
+</div>
+
+<div align="center">
 <h2>Installation</h2>
 <p>If you want to deploy this website on your own server, follow these steps:</p>
 </div>
