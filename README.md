@@ -1,5 +1,15 @@
+<h1>Important deprecation notice!</h1>
+
+> [!WARNING]  
+> This repository is **deprecated** and no longer maintained. Do not rely on any information or documentation contained in this repository as it may be outdated and incorrect.
+> 
+> The **latest and actively maintained** version of this project can be found at [https://github.com/lvkaszus/website](https://github.com/lvkaszus/website).
+>
+> *This repository is preserved for archival purposes only.*
+
+
 <div align="center">
-<h1>lvkaszusWebsite-React</h1>
+<h2>lvkaszusWebsite-React</h2>
 <p>Source Code of my public website (built with React + Vite)</p>
   
 [My Official Website](https://lvkasz.us)
@@ -7,11 +17,6 @@
 </div>
 
 ![Screenshot that represents homepage of my website](lvkaszuswebsite.png)
-
-<div align="center">
-<h2>Important notice!</h2>
-<p>This is most likely the final version (4.27) of this project. Future versions will be developed on an entirely new codebase, featuring a content management system (CMS) and a rewritten frontend in React with TypeScript. I've been learning TypeScript for a few weeks now, and I find it truly impressive - I only wish I had started using it much earlier 😶</p>
-</div>
 
 <div align="center">
 <h2>Installation</h2>
